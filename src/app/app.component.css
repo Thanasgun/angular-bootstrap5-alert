@@ -1,0 +1,17 @@
+.alert-message {
+  overflow: auto;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: auto;
+  margin-bottom: 2vh;
+}

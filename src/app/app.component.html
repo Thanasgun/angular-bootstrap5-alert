@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="alert-message p-4 m-4">
+    <alert></alert>
+    <!-- or place somewhere else you want alert to be shown -->
+  </div>
+
+  <div class="card p-4">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mb-2">
+          <label class="form-label">Message (optional)</label>
+          <textarea class="form-control" [(ngModel)]="message"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mb-2">
+          <label class="form-label">Auto close (leave blank or 0 if not)</label>
+          <input
+            class="form-control"
+            [(ngModel)]="autoClose"
+            type="number"
+            placeholder="second"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center btn-group mt-3">
+      <button
+        type="button"
+        class="btn btn-primary rounded-2 m-2"
+        (click)="success()"
+      >
+        Success
+      </button>
+      <button type="button" class="btn btn-info rounded-2 m-2" (click)="info()">
+        Info
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning rounded-2 m-2"
+        (click)="warning()"
+      >
+        Warning
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger rounded-2 m-2"
+        (click)="error()"
+      >
+        Error
+      </button>
+    </div>
+  </div>
+</div>
